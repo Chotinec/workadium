@@ -28,7 +28,6 @@
 }
 
 /* ------------------------------------ adjustment ----------------------------------- */
-
 html {
   width: 100%;
   height: 100%;
@@ -38,7 +37,9 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 0;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .wrapper {
@@ -54,10 +55,16 @@ body {
 ul {
   margin: 0;
   padding: 0;
+}
 
-  li {
-    list-style: none;
-  }
+ul li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 p {
@@ -69,33 +76,34 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+.container {
+  width: 1060px;
+  margin: 0 auto;
 }
 
 /* --------------------------------- header --------------------------------- */
 
 .header {
-  height: 77px;
   background-color: #27273e;
   position: relative;
 }
 
-.header__logo {
-  position: absolute;
-  left: 19px;
-  top: 13px;
+.header__container {
+  position: relative;
+  height: 77px;
 }
 
-/* .logo__picture {
-  width: 99px;
-  height: 51px;
-} */
+.header__logo {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 13px;
+}
 
 .company-contacts {
   text-align: right;
   position: absolute;
-  right: 22px;
+  right: 0;
   top: 21px;
 }
 
@@ -120,39 +128,58 @@ a {
 /* --------------------------------- banner --------------------------------- */
 
 .banner {
-  width: 100%;
   background-color: #27273e;
-  text-align: center;
+  position: relative;
 }
 
 /* ------------------------------- maincontant ------------------------------ */
+.page-content,
+.sidebar {
+  display: inline-block;
+  vertical-align: top;
+}
 
-
+.page-content {
+  width: 880px;
+}
 
 /* --------------------------------- footer --------------------------------- */
 
 .footer {
-  height: 77px;
   background-color: #27273e;
-  margin-top: -77px;
+ 
+}
+
+.footer__container {
   position: relative;
+  height: 77px;
 }
 
 .footer__text {
   position: absolute;
-  left: 19px;
-  top: 14px;
+  left: 0;
+  top: 10px;
   color: #ffffff;
   font-family: "Gotham Pro";
   font-size: 14px;
   font-weight: 300;
 }
 
-.footer__logo-wraper {
-  margin: auto;
+.footer__logo {
+  position: absolute;
+  left: 500px;
+  top: 10px;
 }
 
-/* .footer__logo {
-  margin-top: 14px; 
-} */
+.social-networks {
+  position: absolute;
+  top: 16px;
+  right: 0;
+}
 
+.social-networks__text {
+  color: #ffffff;
+  font-family: "Gotham Pro";
+  font-size: 14px;
+  font-weight: 700;
+}
