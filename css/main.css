@@ -37,19 +37,20 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
+  padding: 0;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.wrapper {
-  min-height: 100%;
-  overflow: hidden;
-  position: relative;
+h1 h2 h3 h4 h5 h6 {
+  margin: 0;
+  padding: 0;
 }
 
-.empty {
-  height: 77px;
+p {
+  margin: 0;
+  padding: 0;
 }
 
 ul {
@@ -67,13 +68,19 @@ img {
   max-height: 100%;
 }
 
-p {
-  padding: 0;
-  margin: 0;
-}
-
 a {
   text-decoration: none;
+}
+
+.wrapper {
+  min-width: 1100px;
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.empty {
+  height: 77px;
 }
 
 .container {
@@ -113,7 +120,6 @@ a {
   font-size: 21px;
   font-weight: 700;
   text-transform: uppercase;
-  /* padding-right: -5px; */
 }
 
 .company-contacts__schedule {
@@ -130,24 +136,255 @@ a {
 .banner {
   background-color: #27273e;
   position: relative;
+  margin-bottom: 67px;
 }
 
-/* ------------------------------- maincontant ------------------------------ */
+/* --------------------------------- sidebar -------------------------------- */
+
 .page-content,
 .sidebar {
   display: inline-block;
   vertical-align: top;
 }
 
-.page-content {
-  width: 880px;
+.sidebar {
+  width: 200px;
 }
+
+.nav__icon,
+.nav__title {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.nav__icon {
+  width: 33px;
+  height: 20px;
+  background: center center no-repeat;
+}
+
+.nav__icon--main {
+  background-image: url('../images/./icons/main_icon.png');
+}
+
+.nav__icon--star {
+  background-image: url('../images/./icons/feed_icon.png');
+}
+
+.nav__icon--wallet {
+  background-image: url('../images/./icons/wallet_icon.png');
+}
+
+.nav__link:hover .nav__title {
+  color: black;
+}
+
+.nav__title {
+  color: #ec1e79;
+  font-family: "Gotham Pro";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 54px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+/* ------------------------------- maincontant ------------------------------ */
+.features {
+  margin-bottom: 91px;
+}
+
+.page-content {
+  width: 856px;
+}
+
+.section-title {
+  color: #221f1f;
+  font-family: "Gotham Pro";
+  font-size: 49px;
+  font-weight: 700;
+  margin-left: 8px;
+  margin-bottom: 61px;
+}
+
+.features__options {
+  padding-left: 24px;
+  text-align: center;
+}
+
+.features__options-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 194px;
+  margin-right: 68px;
+}
+
+.features__logo {
+  display: flex;
+  background: #27273e;
+  height: 68px;
+  width: 68px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.features__description-name {
+  color: #212121;
+  font-family: "Gotham Pro";
+  font-size: 11px;
+  font-weight: 700;
+  /* line-height: 51.38px; */
+  text-transform: uppercase;
+  letter-spacing: 2.88px;
+}
+
+.features__description-text {
+  font-family: "Gotham Pro";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.fetures__wraper {
+  text-align: left;
+}
+
+.red-point {
+  color: #cc3366;
+  margin-right: 30px;
+}
+
+.section-title {
+  color: #221f1f;
+  font-family: "Gotham Pro";
+  font-size: 49px;
+  font-weight: 700;
+  margin-bottom: 75px;
+}
+
+.news {
+  position: relative;
+}
+
+.news__avatar-picture--black-hole {
+  background-image: url('../images/content/black_hole.png');
+}
+
+.news__avatar-picture--infect-friends{
+  background-image: url('../images/content/infect_friends.png');
+}
+
+.news__avatar-picture--new-place{
+  background-image: url('../images/content/new_place.png');
+}
+
+.news__list {
+  margin-bottom: 66px;
+}
+
+.news__item {
+  height: 166px;
+  margin-bottom: 55px;
+}
+
+.news-avatar {
+  font-size: 0;
+}
+
+.news__avatar-picture {
+  display: inline-block;
+  vertical-align: middle;
+  width: 160px;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.news__description {
+  display: inline-block;
+  vertical-align: middle;
+  width: 672px;
+}
+
+.news__date {
+  color: #221f1f;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 14px;
+}
+
+.news__name {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 18px; 
+  margin-bottom: 24px;
+}
+
+.news__description-text {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+/* ------------------------------- pagination ------------------------------- */
+
+.pagination {
+  position: absolute;
+  left: 272px;
+}
+
+.pagination__pages {
+  font-size: 0;
+}
+
+.pagination__wrapper {
+  display: flex;
+  background: #fff;
+  height: 25px;
+  width: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------------------------ ToDo: Fix ths, add hover ----------------------------- */
+.pagination__wrapper--active {
+  display: flex;
+  background: #27273e;
+  height: 25px;
+  width: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination__display {
+  color: #656464;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.pagination__pages-item,
+.pagination__prev,
+.pagination__next {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.pagination__controls {
+  width: 201px;
+}
+
 
 /* --------------------------------- footer --------------------------------- */
 
 .footer {
   background-color: #27273e;
- 
+  min-width: 1100px;
 }
 
 .footer__container {
@@ -175,6 +412,7 @@ a {
   position: absolute;
   top: 16px;
   right: 0;
+  text-align: left;
 }
 
 .social-networks__text {
@@ -182,4 +420,29 @@ a {
   font-family: "Gotham Pro";
   font-size: 14px;
   font-weight: 700;
+}
+
+.social-networks__list {
+  font-size: 0;
+}
+
+.social-networks__item {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.social-networl__logo {
+  background: #d4d4d8;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  margin-top: 7px;
+}
+
+.social-networl__logo:hover {
+  background: #ec1e79;
 }
