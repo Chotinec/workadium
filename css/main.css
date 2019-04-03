@@ -28,6 +28,11 @@
 }
 
 /* ------------------------------------ adjustment ----------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
 html {
   width: 100%;
   height: 100%;
@@ -38,19 +43,19 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1 h2 h3 h4 h5 h6 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  padding: 0;
+  font-weight: normal;
 }
 
 p {
   margin: 0;
-  padding: 0;
 }
 
 ul {
@@ -58,19 +63,20 @@ ul {
   padding: 0;
 }
 
-ul li {
+/* ul li {
   list-style: none;
-}
+} */
 
 img {
-  display: block;
+  display: inline-block;
   max-width: 100%;
-  max-height: 100%;
 }
 
 a {
   text-decoration: none;
+  display: inline-block
 }
+
 
 .wrapper {
   min-width: 1100px;
@@ -93,11 +99,11 @@ a {
 .header {
   background-color: #27273e;
   position: relative;
+  height: 77px;
 }
 
 .header__container {
   position: relative;
-  height: 77px;
 }
 
 .header__logo {
@@ -131,12 +137,17 @@ a {
   text-decoration: underline;
 }
 
+.maincontant {
+  padding-top: 67px;
+  padding-bottom: 70px;
+}
+
 /* --------------------------------- banner --------------------------------- */
 
 .banner {
   background-color: #27273e;
   position: relative;
-  margin-bottom: 67px;
+  /* margin-bottom: 67px; */
 }
 
 /* --------------------------------- sidebar -------------------------------- */
@@ -155,6 +166,10 @@ a {
 .nav__title {
   display: inline-block;
   vertical-align: middle;
+}
+
+.nav {
+  list-style: none;
 }
 
 .nav__icon {
@@ -192,19 +207,18 @@ a {
 /* ------------------------------- maincontant ------------------------------ */
 .features {
   margin-bottom: 91px;
+  font-family: "Gotham Pro";
 }
 
 .page-content {
   width: 856px;
 }
 
-.section-title {
+.section-title-faetures {
   color: #221f1f;
-  font-family: "Gotham Pro";
   font-size: 49px;
   font-weight: 700;
-  margin-left: 8px;
-  margin-bottom: 61px;
+  margin-bottom: 64px;
 }
 
 .features__options {
@@ -219,7 +233,11 @@ a {
   margin-right: 68px;
 }
 
-.features__logo {
+.features__options-item:last-child {
+  margin-right: 0;
+}
+
+.features__icon {
   display: flex;
   background: #27273e;
   height: 68px;
@@ -231,24 +249,32 @@ a {
 }
 
 .features__description-name {
+  margin-top: 32px;
+  margin-bottom: 28px;
   color: #212121;
-  font-family: "Gotham Pro";
   font-size: 11px;
   font-weight: 700;
-  /* line-height: 51.38px; */
   text-transform: uppercase;
   letter-spacing: 2.88px;
 }
 
 .features__description-text {
-  font-family: "Gotham Pro";
   font-size: 17px;
   font-weight: 400;
   line-height: 30px;
 }
 
-.fetures__wraper {
+.features__description-list{
+  list-style: disc;
   text-align: left;
+  list-style-position: inside;
+  font-size: 18px;
+  /* padding: 6px 0; */
+  color: #cc3366;
+}
+
+.features__description-list span {
+  color: #221f1f;
 }
 
 .red-point {
@@ -256,16 +282,12 @@ a {
   margin-right: 30px;
 }
 
-.section-title {
+.section-title-news {
   color: #221f1f;
   font-family: "Gotham Pro";
   font-size: 49px;
   font-weight: 700;
   margin-bottom: 75px;
-}
-
-.news {
-  position: relative;
 }
 
 .news__avatar-picture--black-hole {
@@ -280,13 +302,12 @@ a {
   background-image: url('../images/content/new_place.png');
 }
 
-.news__list {
-  margin-bottom: 66px;
+.news__item {
+  margin-bottom: 55px;
 }
 
-.news__item {
-  height: 166px;
-  margin-bottom: 55px;
+.news__list {
+  list-style: none;
 }
 
 .news-avatar {
@@ -311,21 +332,18 @@ a {
 
 .news__date {
   color: #221f1f;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 300;
-  margin-bottom: 14px;
 }
 
 .news__name {
-  font-family: "Roboto";
   font-weight: 700;
   font-size: 18px; 
   margin-bottom: 24px;
+  margin-top: 14px;
 }
 
 .news__description-text {
-  font-family: "Roboto";
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
@@ -334,8 +352,7 @@ a {
 /* ------------------------------- pagination ------------------------------- */
 
 .pagination {
-  position: absolute;
-  left: 272px;
+  text-align: center;
 }
 
 .pagination__pages {
@@ -351,7 +368,6 @@ a {
   align-items: center;
 }
 
-/* ------------------------------ ToDo: Fix ths, add hover ----------------------------- */
 .pagination__wrapper--active {
   display: flex;
   background: #27273e;
@@ -366,38 +382,47 @@ a {
   font-family: Roboto;
   font-size: 14px;
   font-weight: 300;
+  margin-right: 20px;
 }
 
 .pagination__pages-item,
 .pagination__prev,
-.pagination__next {
+.pagination__next,
+.pagination__controls,
+.pagination__pages
+{
   display: inline-block;
   vertical-align: middle;
 }
 
-.pagination__controls {
-  width: 201px;
+.pagination__prev {
+  margin-right: 15px;
 }
 
+.pagination__next {
+  margin-left: 18px;
+}
 
 /* --------------------------------- footer --------------------------------- */
 
 .footer {
   background-color: #27273e;
   min-width: 1100px;
+  height: 77px;
+  font-family: "Gotham Pro";
 }
 
 .footer__container {
   position: relative;
-  height: 77px;
 }
 
 .footer__text {
+  width: 270px;
+  text-align: left;
   position: absolute;
   left: 0;
   top: 10px;
   color: #ffffff;
-  font-family: "Gotham Pro";
   font-size: 14px;
   font-weight: 300;
 }
@@ -417,7 +442,6 @@ a {
 
 .social-networks__text {
   color: #ffffff;
-  font-family: "Gotham Pro";
   font-size: 14px;
   font-weight: 700;
 }
@@ -431,7 +455,7 @@ a {
   vertical-align: middle;
 }
 
-.social-networl__logo {
+.social-networl__link {
   background: #d4d4d8;
   height: 20px;
   width: 20px;
@@ -443,6 +467,6 @@ a {
   margin-top: 7px;
 }
 
-.social-networl__logo:hover {
+.social-networl__link:hover {
   background: #ec1e79;
 }
