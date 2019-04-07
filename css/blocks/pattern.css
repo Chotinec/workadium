@@ -1,0 +1,27 @@
+.pattern {
+  background: #27273e;
+  position: relative;
+}
+
+.pattern__picture {
+  background-image: url('../../images/banner/pattern.png');
+  height: 174px;
+  width: 1043px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pattern__text {
+  width: 611px;
+  color: #ffffff;
+  font-family: "Gotham Pro";
+  font-size: 18px;
+  /* font-weight: 300; */
+  line-height: 30px;
+}
+
+.pattern__text-red {
+  color: #ec1e79;
+  font-weight: 700;
+}

@@ -1,0 +1,48 @@
+.nav__link {
+  display: flex;
+  align-items: baseline;
+  transition: 0.3s;
+}
+
+.nav {
+  list-style: none;
+}
+
+.nav__icon {
+  width: 33px;
+  height: 20px;
+  background: center center no-repeat;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.nav__icon--main {
+  background-image: url('../../images/./icons/main_icon.png');
+}
+
+.nav__icon--star {
+  background-image: url('../../images/./icons/feed_icon.png');
+}
+
+.nav__icon--wallet {
+  background-image: url('../../images/./icons/wallet_icon.png');
+}
+
+.nav__item--active .nav__title {
+  color: black;
+}
+
+.nav__link:hover .nav__title {
+  color: black;
+}
+
+.nav__title {
+  color: #ec1e79;
+  font-family: "Gotham Pro";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 0;
+  margin-bottom: 41px; 
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}

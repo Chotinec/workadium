@@ -1,0 +1,19 @@
+.section-title--partners {
+  margin-bottom: 52px;
+}
+
+.partners {
+  margin-top: 7px;
+  margin-bottom: 42px;
+}
+
+.partner__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.partner__item {
+  margin-right: 122px;
+  margin-bottom: 52px;
+}

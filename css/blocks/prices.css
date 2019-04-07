@@ -1,0 +1,100 @@
+.section-title--prices {
+  margin-bottom: 43px;
+}
+
+.prices {
+  font-family: "Gotham Pro";
+}
+
+.prices__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.prices__item {
+  margin-right: 50px;
+  margin-bottom: 66px;
+  flex: 1 0 250px; 
+}
+
+.prices__item:nth-child(3n+3) {
+  margin-right: 0; 
+}
+
+.prices-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prices-member__desc {
+  text-align: center;
+}
+
+.prices-member__name {
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 29px;
+  padding-bottom: 18px; 
+}
+
+.prices-member__text {
+  font-family: "Gotham Pro Light";
+  font-weight: 300; 
+}
+
+.prices-member__avatar {
+  /* max-width: 160px; */
+  /* height: 153px; */
+  /* filter: grayscale(100%); */
+  border-radius: 5px;
+  position: relative;
+}
+
+.prices-member__avatar-text {
+  width: 250px;
+  height: 153px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #5dd1f8;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.prices-member__avatar--overlay {
+  background-image: url('../../images/content/prices/overlay@2x.png');
+}
+
+.prices-member__avatar--one {
+  background-image: url('../../images/content/prices/one.png');
+}
+
+.prices-member__avatar--three {
+  background-image: url('../../images/content/prices/three.png');
+}
+
+.prices-member__avatar--10 {
+  background-image: url('../../images/content/prices/10-10.png');
+}
+
+.prices-member__avatar--unlimited-one {
+  background-image: url('../../images/content/prices/unlimited-one.png');
+}
+
+.prices-member__avatar--oninclusive {
+  background-image: url('../../images/content/prices/oninclusive.png');
+}
+
+.prices-member__avatar--conversation {
+  background-image: url('../../images/content/prices/conversation.png');
+}
+
+.vip {
+  color: #ec1e79;
+}
+
+.center {
+  text-align: center;
+}

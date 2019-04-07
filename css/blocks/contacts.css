@@ -1,0 +1,21 @@
+.contacts {
+  text-align: right;
+  font-style: normal;
+}
+
+.company-contacts__phone {
+  color: #ffffff;
+  font-family: "Gotham Pro";
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.company-contacts__schedule {
+  opacity: 0.7;
+  color: #ec1e79;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: underline;
+}
