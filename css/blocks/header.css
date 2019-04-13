@@ -14,3 +14,7 @@
 .company-contacts__schedule {
   display: block;
 }
+
+.company-contacts__schedule {
+  display: inline-block;
+}

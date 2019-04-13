@@ -14,14 +14,22 @@
     <div class="wrapper__content">
       <header class="header">
         <div class="container header__container">
-          <div class="header__logo">
-            <a href="#" class="header__logo-link">
+          <div class="logo">
+            <a href="#" class="logo-link">
               <img src="./images/logo-fig.png" alt="" class="logo__picture">
             </a>
           </div>
           <address class="contacts">
             <a href="tel:+78000039210" class="company-contacts__phone">8 (800) 00-392-10</a>
-            <a href="#" class="company-contacts__schedule">График работы</a>
+            <div class="contacts__dropddown">
+              <a href="#" class="company-contacts__schedule">График работы</a>
+              <div class="contacts__dropdown-window contacts__dropdown-window--img">
+                <div class="contacts__dropdown-text">
+                  <p class="colored">пн-вс: 09:00-20:00</p>
+                  <p>обед: 14:00-14:30</p>
+                </div>
+              </div>
+            </div>
           </address>
         </div>
 
@@ -35,7 +43,7 @@
         <div class="container maincontent__container">
           <aside class="sidebar">
             <ul class="nav">
-              <li class="nav__item nav__item--active">
+              <li class="nav__item active">
                 <a href="#" class="nav__link">
                   <div class="nav__icon nav__icon--main"></div>
                   <div class="nav__title">ГЛАВНАЯ</div>
@@ -60,9 +68,7 @@
               <h2 class="section-title section-title--faetures">Особенности</h2>
               <ul class="features__options">
                 <li class="features__options-item">
-                  <div class="features__icon">
-                    <img src="./images/features_icons/flower.png" alt="features logo" class=".features__icon-picture">
-                  </div>
+                  <div class="features__icon features__icon--flower"></div>
                   <div class="features__description">
                     <h4 class="features__description-name">уникадьность</h4>
                     <div class="features__description-text">
@@ -77,10 +83,7 @@
                   </div>
                 </li>
                 <li class="features__options-item">
-                  <div class="features__icon">
-                    <img src="./images/features_icons/mark-as-favorite-star.png" alt="features logo"
-                      class=".features__icon-picture">
-                  </div>
+                  <div class="features__icon features__icon--star"></div>
                   <div class="features__description">
                     <h4 class="features__description-name">премиум-класс</h4>
                     <div class="features__description-text">
@@ -95,10 +98,7 @@
                   </div>
                 </li>
                 <li class="features__options-item">
-                  <div class="features__icon">
-                    <img src="./images/features_icons/painter-palette.png" alt="features logo"
-                      class=".features__icon-picture">
-                  </div>
+                  <div class="features__icon features__icon--pallete"></div>
                   <div class="features__description">
                     <h4 class="features__description-name">лакшери-стулья</h4>
                     <div class="features__description-text">
@@ -117,63 +117,57 @@
             <section class="news">
               <h2 class="section-title section-title--news">Последние новости</h2>
               <ul class="news__list">
-                <li class="news__item">
-                  <div class="avatar">
-                    <div class="avatar__picture">
-                      <div class="avatar__picture-wrapper">
-                        <img src="./images/content/black_hole.png" alt="" class="avatar__img">
-                      </div>
-                    </div>
-                    <div class="avatar__description">
-                      <time class="avatar__date">12.10.2016</time>
-                      <h4 class="avatar__name">Чёрная дыра скидок!</h4>
-                      <article class="avatar__description-text">
-                        Ключевым технологическим партнером GrowUp является дата-центр Миран, расположенный всего лишь в
-                        500
-                        метрах от здания, а значит,
-                        скорость интернета будет стабильной в любое время суток. Коворкинг работает в формате
-                        24/7. Используйте шкаф для хранения личных вещей.
-                      </article>
+                <li class="avatar">
+                  <div class="avatar__picture">
+                    <div class="avatar__picture-wrapper">
+                      <img src="./images/content/black_hole.png" alt="" class="avatar__img">
                     </div>
                   </div>
-                </li>
-                <li class="news__item">
-                  <div class="avatar">
-                    <div class="avatar__picture">
-                      <div class="avatar__picture-wrapper">
-                        <img src="./images/content/infect_friends.png" alt="" class="avatar__img">
-                      </div>
-                    </div>
-                    <div class="avatar__description">
-                      <time class="avatar__date">01.02.2016</time>
-                      <h4 class="avatar__name">Заражай друзей, получай призы!</h4>
-                      <article class="avatar__description-text">
-                        Быть частью сообщества сильных, грамотных и увлеченных своим делом профессионалов - вдохновляет
-                        выходить на новые уровни развития.
-                        Регулярно в коворкинге проводятся лекции, мастер-классы, встречи с инвесторами или менторами для
-                        резидентов.
-                      </article>
-                    </div>
+                  <div class="avatar__description">
+                    <time class="avatar__date">12.10.2016</time>
+                    <h4 class="avatar__name">Чёрная дыра скидок!</h4>
+                    <article class="avatar__description-text">
+                      Ключевым технологическим партнером GrowUp является дата-центр Миран, расположенный всего лишь в
+                      500
+                      метрах от здания, а значит,
+                      скорость интернета будет стабильной в любое время суток. Коворкинг работает в формате
+                      24/7. Используйте шкаф для хранения личных вещей.
+                    </article>
                   </div>
                 </li>
-                <li class="news__item">
-                  <div class="avatar">
-                    <div class="avatar__picture">
-                      <div class="avatar__picture-wrapper">
-                        <img src="./images/content/new_place.png" alt="" class="avatar__img">
-                      </div>
+                <li class="avatar">
+                  <div class="avatar__picture">
+                    <div class="avatar__picture-wrapper">
+                      <img src="./images/content/infect_friends.png" alt="" class="avatar__img">
                     </div>
-                    <div class="avatar__description">
-                      <time class="avatar__date">22.12.2015</time>
-                      <h4 class="avatar__name">Новое рабочее место для бизнесменов.</h4>
-                      <article class="avatar__description-text">
-                        Для резидентов коворкинга оборудована не только рабочая зона, но и зона отдыха. Она включает в
-                        себя:
-                        кухонную зону и зону релакса.
-                        Каждый резидент может беспрепятственно пользоваться кухонным оборудованием: микроволновкой,
-                        чайником, кофе машиной, посудой.
-                      </article>
+                  </div>
+                  <div class="avatar__description">
+                    <time class="avatar__date">01.02.2016</time>
+                    <h4 class="avatar__name">Заражай друзей, получай призы!</h4>
+                    <article class="avatar__description-text">
+                      Быть частью сообщества сильных, грамотных и увлеченных своим делом профессионалов - вдохновляет
+                      выходить на новые уровни развития.
+                      Регулярно в коворкинге проводятся лекции, мастер-классы, встречи с инвесторами или менторами для
+                      резидентов.
+                    </article>
+                  </div>
+                </li>
+                <li class="avatar">
+                  <div class="avatar__picture">
+                    <div class="avatar__picture-wrapper">
+                      <img src="./images/content/new_place.png" alt="" class="avatar__img">
                     </div>
+                  </div>
+                  <div class="avatar__description">
+                    <time class="avatar__date">22.12.2015</time>
+                    <h4 class="avatar__name">Новое рабочее место для бизнесменов.</h4>
+                    <article class="avatar__description-text">
+                      Для резидентов коворкинга оборудована не только рабочая зона, но и зона отдыха. Она включает в
+                      себя:
+                      кухонную зону и зону релакса.
+                      Каждый резидент может беспрепятственно пользоваться кухонным оборудованием: микроволновкой,
+                      чайником, кофе машиной, посудой.
+                    </article>
                   </div>
                 </li>
               </ul>
@@ -185,52 +179,38 @@
                   </a>
                   <ul class="pagination__pages-list">
                     <li class="pagination__pages-item">
-                      <div class="pagination__wrapper--active">
-                        <div href="#" class="pagination__link">
-                          <img src="./images/numbers/1_light.png" alt="1" class="pagination__page-number">
-                        </div>
+                      <div class="pagination__wrapper pagination__wrapper--active">
+                        <a href="#" class="pagination__page-number">1</a>
                       </div>
                     </li>
                     <li class="pagination__pages-item">
                       <div class="pagination__wrapper">
-                        <a href="#" class="pagination__link">
-                          <img src="./images/numbers/2.png" alt="1" class="pagination__page-number">
-                        </a>
+                        <a href="#" class="pagination__page-number">2</a>
                       </div>
                     </li>
                     <li class="pagination__pages-item">
                       <div class="pagination__wrapper">
-                        <a href="#" class="pagination__link">
-                          <img src="./images/numbers/3.png" alt="1" class="pagination__page-number">
-                        </a>
+                        <a href="#" class="pagination__page-number">3</a>
                       </div>
                     </li>
                     <li class="pagination__pages-item">
                       <div class="pagination__wrapper">
-                        <a href="#" class="pagination__link">
-                          <img src="./images/numbers/4.png" alt="1" class="pagination__page-number">
-                        </a>
+                        <a href="#" class="pagination__page-number">4</a>
                       </div>
                     </li>
                     <li class="pagination__pages-item">
                       <div class="pagination__wrapper">
-                        <a href="#" class="pagination__link">
-                          <img src="./images/numbers/5.png" alt="1" class="pagination__page-number">
-                        </a>
+                        <a href="#" class="pagination__page-number">5</a>
                       </div>
                     </li>
                     <li class="pagination__pages-item">
                       <div class="pagination__wrapper">
-                        <a href="#" class="pagination__link">
-                          <img src="./images/numbers/6.png" alt="1" class="pagination__page-number">
-                        </a>
+                        <a href="#" class="pagination__page-number">6</a>
                       </div>
                     </li>
                     <li class="pagination__pages-item">
                       <div class="pagination__wrapper">
-                        <a href="#" class="pagination__link">
-                          <img src="./images/numbers/7.png" alt="1" class="pagination__page-number">
-                        </a>
+                        <a href="#" class="pagination__page-number">7</a>
                       </div>
                     </li>
                   </ul>
@@ -252,8 +232,8 @@
           <p class="footer__text-paragraph">на курсе «HTML + CSS» в <span class="strong">LoftSchool</span>.</p>
           <p class="footer__text-paragraph">Автор работы: <span class="strong">Хотинец Артем</span></p>
         </div>
-        <div class="footer__logo">
-          <a href="#" class="footer__logo-link">
+        <div class="logo">
+          <a href="/" class=zlogo-link">
             <img src="./images/logo-fig.png" alt="" class="logo__picture">
           </a>
         </div>
@@ -261,29 +241,29 @@
           <p class="social-networks__text">Наши социальные сети</p>
           <ul class="social-networks__list">
             <li class="social-networks__item">
-              <a href="#" class="social-networl__link">
-                <img src="./images/socials_icons/vk.png" alt="vk" class="social-networl__logo-picture">
-              </a>
+              <a href="#" class="social-networl__link
+                                 social-networl__icon
+                                 social-networl__link--vk"></a>
             </li>
             <li class="social-networks__item">
-              <a href="#" class="social-networl__link">
-                <img src="./images/socials_icons/fb.png" alt="f" class="social-networl__logo-picture">
-              </a>
+              <a href="#" class="social-networl__link
+                                 social-networl__icon 
+                                 social-networl__link--fb"></a>
             </li>
             <li class="social-networks__item">
-              <a href="#" class="social-networl__link">
-                <img src="./images/socials_icons/google.png" alt="g" class="social-networl__logo-picture">
-              </a>
+              <a href="#" class="social-networl__link
+                                 social-networl__icon
+                                 social-networl__link--google"></a>
             </li>
             <li class="social-networks__item">
-              <a href="#" class="social-networl__link">
-                <img src="./images/socials_icons/twitter.png" alt="twitter" class="social-networl__logo-picture">
-              </a>
+              <a href="#" class="social-networl__link
+                                 social-networl__icon
+                                 social-networl__link--twitter"></a>
             </li>
             <li class="social-networks__item">
-              <a href="#" class="social-networl__link">
-                <img src="./images/socials_icons/mail.png" alt="mail" class="social-networl__logo-picture">
-              </a>
+              <a href="#" class="social-networl__link
+                                 social-networl__icon
+                                 social-networl__link--mail"></a>
             </li>
           </ul>
         </div>

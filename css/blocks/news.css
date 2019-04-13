@@ -2,17 +2,6 @@
   margin-bottom: 47px;
 }
 
-.news__item {
-  padding-top: 28px;
-  padding-bottom: 28px;
-  border-bottom: 2px solid #f5f5f5;
-}
-
-.news__item:last-child {
-  border-bottom: none;
-  padding-bottom: 0; 
-}
-
 .news__list {
   list-style: none;
   margin-bottom: 66px;

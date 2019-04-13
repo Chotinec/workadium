@@ -4,7 +4,7 @@
 
 .partners {
   margin-top: 7px;
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
 }
 
 .partner__list {
@@ -16,4 +16,16 @@
 .partner__item {
   margin-right: 122px;
   margin-bottom: 52px;
+}
+
+.partner__item:nth-child(n+4) {
+  margin-bottom: 16px;
+}
+
+.parner__logo {
+  filter: grayscale(100%);
+}
+
+.parner__logo:hover {
+  filter: grayscale(0);
 }

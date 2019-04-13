@@ -24,7 +24,7 @@ body {
 .container {
   width: 1060px;
   margin: 0 auto;
-  display: flex;
+  /* display: flex; */
 }
 
 ul {
@@ -64,4 +64,45 @@ table {
 
 * {
   box-sizing: border-box;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border:  1px solid #ec1e79;
+}
+
+@keyframes swing {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+
+  40% {
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+
+  60% {
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+
+  80% {
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+
+  to {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+.swing {
+  transform-origin: top center;
+  animation-name: swing;
 }

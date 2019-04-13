@@ -8,28 +8,95 @@
   list-style: none;
 }
 
+.nav__item {
+  margin-left: 20px;
+  margin-bottom: 41px; 
+}
+
 .nav__icon {
   width: 33px;
   height: 20px;
   background: center center no-repeat;
-  margin-left: 20px;
   margin-right: 20px;
+  position: relative;
 }
 
-.nav__icon--main {
-  background-image: url('../../images/./icons/main_icon.png');
+.nav__icon:last-child {
+  margin-bottom: 0;
 }
 
-.nav__icon--star {
-  background-image: url('../../images/./icons/feed_icon.png');
+.nav__icon::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url('../../images/sprites/nav_icons.png') no-repeat;
+  transition: .3s;
 }
 
-.nav__icon--wallet {
-  background-image: url('../../images/./icons/wallet_icon.png');
+.nav__icon::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url('../../images/sprites/nav_icons.png') no-repeat;
+  opacity: 0;
 }
 
-.nav__item--active .nav__title {
-  color: black;
+.nav__link:hover .nav__icon::after {
+  opacity: 1;
+}
+
+.nav__link:hover .nav__icon::before {
+  opacity: 0;
+}
+
+.nav__icon--main::before {
+  width: 17px;
+  height: 15px;
+  background-position: -90px -10px;
+}
+
+.nav__icon--main::after {
+  width: 17px;
+  height: 15px;
+  background-position: -90px -45px;
+}
+
+.nav__icon--star::before {
+  width: 20px; height: 18px;
+  background-position: -10px -10px;
+}
+
+.nav__icon--star::after {
+  width: 20px; height: 18px;
+  background-position: -50px -10px;
+}
+
+.nav__icon--wallet::before {
+  width: 20px; height: 18px;
+  background-position: -10px -48px;
+}
+
+.nav__icon--wallet::after {
+  width: 19px; height: 16px;
+  background-position: -49px -48px;
+}
+
+.nav__item.active .nav__title {
+  color: #221f1f;
+}
+
+.nav__item.active .nav__icon::after {
+  opacity: 1;
+}
+
+.nav__item.active .nav__icon::before {
+  opacity: 0;
 }
 
 .nav__link:hover .nav__title {
@@ -42,7 +109,7 @@
   font-size: 12px;
   font-weight: 700;
   line-height: 0;
-  margin-bottom: 41px; 
   text-transform: uppercase;
   letter-spacing: 1.2px;
+  transition: .3s;
 }

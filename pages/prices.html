@@ -21,7 +21,15 @@
           </div>
           <address class="contacts">
             <a href="tel:+78000039210" class="company-contacts__phone">8 (800) 00-392-10</a>
-            <a href="#" class="company-contacts__schedule">График работы</a>
+            <div class="contacts__dropddown">
+              <a href="#" class="company-contacts__schedule">График работы</a>
+              <div class="contacts__dropdown-window contacts__dropdown-window--img">
+                <div class="contacts__dropdown-text">
+                  <p class="colored">пн-вс: 09:00-20:00</p>
+                  <p>обед: 14:00-14:30</p>
+                </div>
+              </div>
+            </div>
           </address>
         </div>
       </header>
@@ -41,7 +49,7 @@
                   <div class="nav__title">ОТЗЫВЫ</div>
                 </a>
               </li>
-              <li class="nav__item nav__item--active">
+              <li class="nav__item active">
                 <a href="#" class="nav__link">
                   <div class="nav__icon nav__icon--wallet"></div>
                   <div class="nav__title">ТАРИФЫ</div>
@@ -62,10 +70,9 @@
               <h2 class="section-title section-title--prices">Тарифы</h2>
               <ul class="prices__list">
                 <li class="prices__item prices-member">
-                  <div class="prices-member__avatar prices-member__avatar--one">
-                    <div class="prices-member__avatar-text prices-member__avatar--overlay">
-                      «ОДИН»
-                    </div>
+                  <div class="prices-member__avatar">
+                    <img src="../images/content/prices/one.png" alt="" class="prices-member__avatar--img">
+                    <div class="prices-member__avatar-text">«ОДИН»</div>
                   </div>
                   <div class="prices-member__desc">
                     <h3 class="prices-member__name">800 руб/мес или 100 руб/сутки</h3>
@@ -77,10 +84,9 @@
                   </div>
                 </li>
                 <li class="prices__item prices-member">
-                  <div class="prices-member__avatar prices-member__avatar--three">
-                    <div class="prices-member__avatar-text prices-member__avatar--overlay">
-                      «Трое»
-                    </div>
+                  <div class="prices-member__avatar">
+                    <img src="../images/content/prices/three.png" alt="" class="prices-member__avatar--img">
+                    <div class="prices-member__avatar-text">«Трое»</div>
                   </div>
                   <div class="prices-member__desc">
                     <h3 class="prices-member__name">1 500 руб/мес или 200 руб/сутки</h3>
@@ -92,10 +98,9 @@
                   </div>
                 </li>
                 <li class="prices__item prices-member">
-                  <div class="prices-member__avatar prices-member__avatar--10">
-                    <div class="prices-member__avatar-text prices-member__avatar--overlay">
-                      «10-10»
-                    </div>
+                  <div class="prices-member__avatar">
+                    <img src="../images/content/prices/10-10.png" alt="" class="prices-member__avatar--img">
+                    <div class="prices-member__avatar-text">«10-10»</div>
                   </div>
                   <div class="prices-member__desc">
                     <h3 class="prices-member__name">10 000 руб/мес</h3>
@@ -107,8 +112,9 @@
                   </div>
                 </li>
                 <li class="prices__item prices-member">
-                  <div class="prices-member__avatar prices-member__avatar--unlimited-one">
-                    <div class="prices-member__avatar-text prices-member__avatar--overlay">
+                  <div class="prices-member__avatar">
+                    <img src="../images/content/prices/unlimited-one.png" alt="" class="prices-member__avatar--img">
+                    <div class="prices-member__avatar-text">
                       <div class="center">
                         <p class="vip">VIP</p>
                         <p>«Безлимит на одного»</p>
@@ -125,8 +131,9 @@
                   </div>
                 </li>
                 <li class="prices__item prices-member">
-                  <div class="prices-member__avatar prices-member__avatar--oninclusive">
-                    <div class="prices-member__avatar-text prices-member__avatar--overlay">
+                  <div class="prices-member__avatar">
+                      <img src="../images/content/prices/oninclusive.png" alt="" class="prices-member__avatar--img">
+                    <div class="prices-member__avatar-text">
                       <div class="center">
                         <p class="vip">VIP</p>
                         <p>«Все включено»</p>
@@ -145,10 +152,9 @@
                   </div>
                 </li>
                 <li class="prices__item prices-member">
-                  <div class="prices-member__avatar prices-member__avatar--conversation">
-                    <div class="prices-member__avatar-text prices-member__avatar--overlay">
-                      «Переговоры»
-                    </div>
+                  <div class="prices-member__avatar">
+                      <img src="../images/content/prices/conversation.png" alt="" class="prices-member__avatar--img">
+                    <div class="prices-member__avatar-text">«Переговоры»</div>
                   </div>
                   <div class="prices-member__desc">
                     <h3 class="prices-member__name">2 500 руб/час — </h3>
@@ -221,7 +227,7 @@
         <p class="footer__text-paragraph">на курсе «HTML + CSS» в <span class="strong">LoftSchool</span>.</p>
         <p class="footer__text-paragraph">Автор работы: <span class="strong">Хотинец Артем</span></p>
       </div>
-      <div class="footer__logo">
+      <div class="logo">
         <a href="../index.html" class="footer__logo-link">
           <img src="../images/logo-fig.png" alt="" class="logo__picture">
         </a>
@@ -231,29 +237,29 @@
         <p class="social-networks__text">Наши социальные сети</p>
         <ul class="social-networks__list">
           <li class="social-networks__item">
-            <a href="#" class="social-networl__link">
-              <img src="../images/socials_icons/vk.png" alt="vk" class="social-networl__logo-picture">
-            </a>
+            <a href="#" class="social-networl__link
+                               social-networl__icon
+                               social-networl__link--vk"></a>
           </li>
           <li class="social-networks__item">
-            <a href="#" class="social-networl__link">
-              <img src="../images/socials_icons/fb.png" alt="f" class="social-networl__logo-picture">
-            </a>
+            <a href="#" class="social-networl__link
+                               social-networl__icon
+                               social-networl__link--fb"></a>
           </li>
           <li class="social-networks__item">
-            <a href="#" class="social-networl__link">
-              <img src="../images/socials_icons/google.png" alt="g" class="social-networl__logo-picture">
-            </a>
+            <a href="#" class="social-networl__link
+                               social-networl__icon
+                               social-networl__link--google"></a>
           </li>
           <li class="social-networks__item">
-            <a href="#" class="social-networl__link">
-              <img src="../images/socials_icons/twitter.png" alt="twitter" class="social-networl__logo-picture">
-            </a>
+            <a href="#" class="social-networl__link
+                               social-networl__icon
+                               social-networl__link--twitter"></a>
           </li>
           <li class="social-networks__item">
-            <a href="#" class="social-networl__link">
-              <img src="../images/socials_icons/mail.png" alt="mail" class="social-networl__logo-picture">
-            </a>
+            <a href="#" class="social-networl__link
+                               social-networl__icon
+                               social-networl__link--mail"></a>
           </li>
         </ul>
       </div>

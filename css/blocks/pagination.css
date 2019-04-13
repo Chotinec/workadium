@@ -1,7 +1,7 @@
 .pagination {
   display: flex;
   justify-content: center;
-  margin-bottom: 70px;
+  /* margin-bottom: 70px; */
 }
 
 .pagination__controls {
@@ -22,6 +22,14 @@
   align-items: center;
 }
 
+.pagination__page-number {
+  color: #221f1f;
+  font-family: "Gotham Pro";
+  font-size: 14px;
+  font-weight: 700;
+  transition: .3s;
+}
+
 .pagination__wrapper--active {
   display: flex;
   background: #27273e;
@@ -32,18 +40,27 @@
   border-radius: 5px;
 }
 
+.pagination__wrapper--active .pagination__page-number {
+  color: #fff;
+}
+
 .pagination__display {
   color: #656464;
-  font-family: Roboto;
+  font-family: "Gotham Pro";
   font-size: 14px;
   font-weight: 300;
   margin-right: 20px;
 }
 
 .pagination__prev {
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .pagination__next {
-  margin-left: 18px;
+  margin-left: 10px;
 }
+
+.pagination__page-number:hover {
+  color: #ec1e79;
+}
+

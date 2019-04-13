@@ -26,6 +26,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .prices-member__desc {
@@ -40,55 +41,54 @@
 }
 
 .prices-member__text {
-  font-family: "Gotham Pro Light";
   font-weight: 300; 
 }
 
 .prices-member__avatar {
-  /* max-width: 160px; */
-  /* height: 153px; */
-  /* filter: grayscale(100%); */
+  cursor: pointer;
   border-radius: 5px;
   position: relative;
+  width: 250px;
+  height: 153px;
+}
+
+.prices-member__avatar::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(75, 115, 181, 0.6);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+}
+
+.prices-member__avatar:hover::before {
+  background-color: transparent;
+}
+
+.prices-member__avatar:hover .prices-member__avatar-text {
+  opacity: 0;
 }
 
 .prices-member__avatar-text {
-  width: 250px;
-  height: 153px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: #5dd1f8;
   font-size: 24px;
   font-weight: 700;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.6s;
+  opacity: 1;
 }
 
-.prices-member__avatar--overlay {
-  background-image: url('../../images/content/prices/overlay@2x.png');
-}
-
-.prices-member__avatar--one {
-  background-image: url('../../images/content/prices/one.png');
-}
-
-.prices-member__avatar--three {
-  background-image: url('../../images/content/prices/three.png');
-}
-
-.prices-member__avatar--10 {
-  background-image: url('../../images/content/prices/10-10.png');
-}
-
-.prices-member__avatar--unlimited-one {
-  background-image: url('../../images/content/prices/unlimited-one.png');
-}
-
-.prices-member__avatar--oninclusive {
-  background-image: url('../../images/content/prices/oninclusive.png');
-}
-
-.prices-member__avatar--conversation {
-  background-image: url('../../images/content/prices/conversation.png');
+.prices-member__avatar--img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: middle;
 }
 
 .vip {

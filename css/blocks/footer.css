@@ -12,16 +12,11 @@
 }
 
 .footer__text {
-  width: 270px;
   text-align: left;
   margin-top: 14px;
   color: #ffffff;
   font-size: 14px;
   font-weight: 300;
-}
-
-.footer__logo {
-  margin-top: 14px; 
 }
 
 .social-networks {
@@ -40,15 +35,56 @@
 }
 
 .social-networl__link {
-  background: #d4d4d8;
+  background-color: #d4d4d8;
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-right: 10px;
   margin-top: 7px;
+  transition: .3s;
+}
+
+.social-networl__link--background-color {
+
+}
+
+.social-networl__icon {
+  position: relative;
+}
+
+.social-networl__icon:after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: no-repeat;
+}
+
+.social-networl__link--vk::after {
+  width: 12px; height: 7px;
+  background: url('../../images/sprites/socials_icons.png') -41px -39px;
+}
+
+.social-networl__link--fb::after {
+  width: 6px; height: 13px;
+  background: url('../../images/sprites/socials_icons.png') -77px -10px;
+}
+
+.social-networl__link--google::after {
+  width: 15px; height: 9px;
+  background: url('../../images/sprites/socials_icons.png') -10px -10px;
+}
+
+.social-networl__link--twitter::after {
+  width: 11px; height: 9px;
+  background: url('../../images/sprites/socials_icons.png') -10px -39px;
+}
+
+.social-networl__link--mail::after {
+  width: 12px; height: 9px;
+  background: url('../../images/sprites/socials_icons.png') -45px -10px;
 }
 
 .social-networl__link:hover {

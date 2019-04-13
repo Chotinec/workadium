@@ -21,7 +21,15 @@
           </div>
           <address class="contacts">
             <a href="tel:+78000039210" class="company-contacts__phone">8 (800) 00-392-10</a>
-            <a href="#" class="company-contacts__schedule">График работы</a>
+            <div class="contacts__dropddown">
+              <a href="#" class="company-contacts__schedule">График работы</a>
+              <div class="contacts__dropdown-window contacts__dropdown-window--img">
+                <div class="contacts__dropdown-text">
+                  <p class="colored">пн-вс: 09:00-20:00</p>
+                  <p>обед: 14:00-14:30</p>
+                </div>
+              </div>
+            </div>
           </address>
         </div>
       </header>
@@ -32,10 +40,10 @@
               <li class="nav__item">
                 <a href="../index.html" class="nav__link">
                   <div class="nav__icon nav__icon--main"></div>
-                  <div class="nav__title">ГЛАВНАЯ</div>
+                  <div class="nav__title nav__active--title">ГЛАВНАЯ</div>
                 </a>
               </li>
-              <li class="nav__item nav__item--active">
+              <li class="nav__item active">
                 <a href="#" class="nav__link">
                   <div class="nav__icon nav__icon--star"></div>
                   <div class="nav__title">ОТЗЫВЫ</div>
@@ -61,90 +69,82 @@
             <section class="comments">
               <h2 class="section-title section-title--comments">Отзывы</h2>
               <ul class="comments__list">
-                <li class="comments__item">
-                  <article class="avatar">
-                    <div class="avatar__picture">
-                      <div class="avatar__picture-wrapper">
-                        <img src="../images/content/comments/vcvb.png" alt="" class="avatar__img">
-                      </div>
+                <li class="avatar">
+                  <div class="avatar__picture">
+                    <div class="avatar__picture-wrapper">
+                      <img src="../images/content/comments/vcvb.png" alt="" class="avatar__img">
                     </div>
-                    <div class="avatar__description">
-                      <time class="avatar__date">12.10.2016</time>
-                      <h4 class="avatar__name">Олег Павлов</h4>
-                      <p class="avatar__description-text">
-                        Пользуемся услугами коворкинга стабильно раз в неделю, когда проводим
-                        совещания директоров. Получается намного дешевле и удобно всем
-                        добираться. Единственное пожелание – расширить меню, потому что
-                        бизнес-ланчи – это все таки средний уровень, а хочется чего то более
-                        вкусного, чтобы можно было угощать начальство.
-                      </p>
-                    </div>
-                  </article>
+                  </div>
+                  <div class="avatar__description">
+                    <time class="avatar__date">12.10.2016</time>
+                    <h4 class="avatar__name">Олег Павлов</h4>
+                    <p class="avatar__description-text">
+                      Пользуемся услугами коворкинга стабильно раз в неделю, когда проводим
+                      совещания директоров. Получается намного дешевле и удобно всем
+                      добираться. Единственное пожелание – расширить меню, потому что
+                      бизнес-ланчи – это все таки средний уровень, а хочется чего то более
+                      вкусного, чтобы можно было угощать начальство.
+                    </p>
+                  </div>
                 </li>
-                <li class="comments__item">
-                  <article class="avatar">
-                    <div class="avatar__picture">
-                      <div class="avatar__picture-wrapper">
-                        <img src="../images/content/comments/fdfd.png" alt="" class="avatar__img">
-                      </div>
+                <li class="avatar">
+                  <div class="avatar__picture">
+                    <div class="avatar__picture-wrapper">
+                      <img src="../images/content/comments/fdfd.png" alt="" class="avatar__img">
                     </div>
-                    <div class="avatar__description">
-                      <time class="avatar__date">01.02.2016</time>
-                      <h4 class="avatar__name">Эрнест Изиль</h4>
-                      <p class="avatar__description-text">
-                        Я фрилансер, программист, работать дома не могу, так как мешают дети.
-                        Здесь нашел то, что давно искал – тишину и спокойствие. Эффективность
-                        работы выросла, как и гонорары. Очень удобно, что коворкинг находится
-                        недалеко от метро. Стабильный интернет, чистота и порядок вокруг, никто
-                        не мешает. Цены сначала показались высокими, но учитывая полученные
-                        преимущества, все отлично!
-                      </p>
-                    </div>
-                  </article>
+                  </div>
+                  <div class="avatar__description">
+                    <time class="avatar__date">01.02.2016</time>
+                    <h4 class="avatar__name">Эрнест Изиль</h4>
+                    <p class="avatar__description-text">
+                      Я фрилансер, программист, работать дома не могу, так как мешают дети.
+                      Здесь нашел то, что давно искал – тишину и спокойствие. Эффективность
+                      работы выросла, как и гонорары. Очень удобно, что коворкинг находится
+                      недалеко от метро. Стабильный интернет, чистота и порядок вокруг, никто
+                      не мешает. Цены сначала показались высокими, но учитывая полученные
+                      преимущества, все отлично!
+                    </p>
+                  </div>
                 </li>
-                <li class="comments__item">
-                  <article class="avatar">
-                    <div class="avatar__picture">
-                      <div class="avatar__picture-wrapper-no-content">
-                        <img src="../images/content/comments/logo-fig.png" alt="" class="avatar__img">
-                      </div>
+                <li class="avatar">
+                  <div class="avatar__picture">
+                    <div class="avatar__picture-wrapper-no-content">
+                      <img src="../images/content/comments/logo-fig.png" alt="" class="avatar__img">
                     </div>
-                    <div class="avatar__description">
-                      <time class="avatar__date">22.12.2015</time>
-                      <h4 class="avatar__name">Елена Сургай</h4>
-                      <p class="avatar__description-text">
-                        Захожу сюда не часто, так как не мой район, но когда бываю в центре, то
-                        периодически нужно место для плодотворной работы. Интернет-клубы не
-                        подходят, так как не обеспечивают такой уровень сервиса, как Воркадиум.
-                        Здесь я нахожу вдохновение и могу выделить время для творчества.
-                        Желаю Воркадиуму процветания и развития. Если будете открывать
-                        филиалы, обратите внимание на Алексеевский район, я буду вашим
-                        постоянным клиентом :)
-                      </p>
-                    </div>
-                  </article>
+                  </div>
+                  <div class="avatar__description">
+                    <time class="avatar__date">22.12.2015</time>
+                    <h4 class="avatar__name">Елена Сургай</h4>
+                    <p class="avatar__description-text">
+                      Захожу сюда не часто, так как не мой район, но когда бываю в центре, то
+                      периодически нужно место для плодотворной работы. Интернет-клубы не
+                      подходят, так как не обеспечивают такой уровень сервиса, как Воркадиум.
+                      Здесь я нахожу вдохновение и могу выделить время для творчества.
+                      Желаю Воркадиуму процветания и развития. Если будете открывать
+                      филиалы, обратите внимание на Алексеевский район, я буду вашим
+                      постоянным клиентом :)
+                    </p>
+                  </div>
                 </li>
-                <li class="comments__item">
-                  <article class="avatar">
-                    <div class="avatar__picture">
-                      <div class="avatar__picture-wrapper">
-                        <img src="../images/content/comments/swcnamirzyc-danielle-marroquin.png" alt=""
-                          class="avatar__img">
-                      </div>
+                <li class="avatar">
+                  <div class="avatar__picture">
+                    <div class="avatar__picture-wrapper">
+                      <img src="../images/content/comments/swcnamirzyc-danielle-marroquin.png" alt=""
+                        class="avatar__img">
                     </div>
-                    <div class="avatar__description">
-                      <time class="avatar__date">14.08.2015</time>
-                      <h4 class="avatar__name">Наталья Осадчая</h4>
-                      <p class="avatar__description-text">
-                        Провожу здесь встречи с клиентами в неформальной обстановке. Удобно,
-                        что при необходимости все под рукой – и ксерокс, и принтер и магазин
-                        канцелярии. Заключаю здесь свои лучшие договора. Единственное
-                        пожелание – сделайте еще несколько переговорных комнат на 10-15
-                        человек, а то они пользуются большим спросом и не всегда есть
-                        возможность забронировать.
-                      </p>
-                    </div>
-                  </article>
+                  </div>
+                  <div class="avatar__description">
+                    <time class="avatar__date">14.08.2015</time>
+                    <h4 class="avatar__name">Наталья Осадчая</h4>
+                    <p class="avatar__description-text">
+                      Провожу здесь встречи с клиентами в неформальной обстановке. Удобно,
+                      что при необходимости все под рукой – и ксерокс, и принтер и магазин
+                      канцелярии. Заключаю здесь свои лучшие договора. Единственное
+                      пожелание – сделайте еще несколько переговорных комнат на 10-15
+                      человек, а то они пользуются большим спросом и не всегда есть
+                      возможность забронировать.
+                    </p>
+                  </div>
                 </li>
               </ul>
               <div class="pagination">
@@ -155,52 +155,38 @@
                   </a>
                   <ul class="pagination__pages-list">
                     <li class="pagination__pages-item">
-                      <div class="pagination__wrapper--active">
-                        <div href="#" class="pagination__link">
-                          <img src="../images/numbers/1_light.png" alt="1" class="pagination__page-number">
-                        </div>
+                      <div class="pagination__wrapper pagination__wrapper--active">
+                        <a href="#" class="pagination__page-number">1</a>
                       </div>
                     </li>
                     <li class="pagination__pages-item">
                       <div class="pagination__wrapper">
-                        <a href="#" class="pagination__link">
-                          <img src="../images/numbers/2.png" alt="1" class="pagination__page-number">
-                        </a>
+                        <a href="#" class="pagination__page-number">2</a>
                       </div>
                     </li>
                     <li class="pagination__pages-item">
                       <div class="pagination__wrapper">
-                        <a href="#" class="pagination__link">
-                          <img src="../images/numbers/3.png" alt="1" class="pagination__page-number">
-                        </a>
+                        <a href="#" class="pagination__page-number">3</a>
                       </div>
                     </li>
                     <li class="pagination__pages-item">
                       <div class="pagination__wrapper">
-                        <a href="#" class="pagination__link">
-                          <img src="../images/numbers/4.png" alt="1" class="pagination__page-number">
-                        </a>
+                        <a href="#" class="pagination__page-number">4</a>
                       </div>
                     </li>
                     <li class="pagination__pages-item">
                       <div class="pagination__wrapper">
-                        <a href="#" class="pagination__link">
-                          <img src="../images/numbers/5.png" alt="1" class="pagination__page-number">
-                        </a>
+                        <a href="#" class="pagination__page-number">5</a>
                       </div>
                     </li>
                     <li class="pagination__pages-item">
                       <div class="pagination__wrapper">
-                        <a href="#" class="pagination__link">
-                          <img src="../images/numbers/6.png" alt="1" class="pagination__page-number">
-                        </a>
+                        <a href="#" class="pagination__page-number">6</a>
                       </div>
                     </li>
                     <li class="pagination__pages-item">
                       <div class="pagination__wrapper">
-                        <a href="#" class="pagination__link">
-                          <img src="../images/numbers/7.png" alt="1" class="pagination__page-number">
-                        </a>
+                        <a href="#" class="pagination__page-number">7</a>
                       </div>
                     </li>
                   </ul>
@@ -214,15 +200,15 @@
         </div>
       </div>
       <div class="pattern ">
-        <div class="container">
-          <div class="pattern__picture">
-            <div class="pattern__text">
-              Для наших новых клиентов мы предлагаем <span class="pattern__text-red">скидку 50%</span> на первый
-              день! Приходите, чтобы лично оценить преимущества коворкинга
-              «Воркадиум»!
-            </div>
+        <!-- <div class="container"> -->
+        <div class="pattern__picture">
+          <div class="pattern__text">
+            Для наших новых клиентов мы предлагаем <span class="pattern__text-red">скидку 50%</span> на первый
+            день! Приходите, чтобы лично оценить преимущества коворкинга
+            «Воркадиум»!
           </div>
         </div>
+        <!-- </div> -->
       </div>
       <div class="form">
         <div class="form__content">
@@ -245,17 +231,21 @@
               </label>
             </div>
             <div class="form__row">
-              <label class="form__block">
+              <div class="form__block">
                 <div class="form__block-title">Отображать фото в отзыве?</div>
                 <div class="form__radio-block">
-                  <div class="form__radio-input">
-                    <input type="radio" class="form__input form-radio">Да
-                  </div>
-                  <div class="form__radio-input">
-                    <input type="radio" class="form__input form-radio">Нет
-                  </div>
+                  <label for="yes" class="form__radio-trigger">
+                    <input type="radio" id="yes" name="photo" class="visuallyHidden">
+                    <span class="form__radio-custom"></span>
+                    <span class="form__radio-title">Да</span>
+                  </label>
+                  <label for="no" class="form__radio-trigger">
+                    <input type="radio" id="no" name="photo" class="visuallyHidden">
+                    <span class="form__radio-custom"></span>
+                    <span class="form__radio-title">Нет</span>
+                  </label>
                 </div>
-              </label>
+              </div>
               <button type="submit" class="form__button"><span class=form__button-text>Отправить</span></button>
             </div>
           </form>
@@ -270,7 +260,7 @@
         <p class="footer__text-paragraph">на курсе «HTML + CSS» в <span class="strong">LoftSchool</span>.</p>
         <p class="footer__text-paragraph">Автор работы: <span class="strong">Хотинец Артем</span></p>
       </div>
-      <div class="footer__logo">
+      <div class="logo">
         <a href="../index.html" class="footer__logo-link">
           <img src="../images/logo-fig.png" alt="" class="logo__picture">
         </a>
@@ -280,29 +270,29 @@
         <p class="social-networks__text">Наши социальные сети</p>
         <ul class="social-networks__list">
           <li class="social-networks__item">
-            <a href="#" class="social-networl__link">
-              <img src="../images/socials_icons/vk.png" alt="vk" class="social-networl__logo-picture">
-            </a>
+            <a href="#" class="social-networl__link
+                               social-networl__icon
+                               social-networl__link--vk"></a>
           </li>
           <li class="social-networks__item">
-            <a href="#" class="social-networl__link">
-              <img src="../images/socials_icons/fb.png" alt="f" class="social-networl__logo-picture">
-            </a>
+            <a href="#" class="social-networl__link
+                               social-networl__icon
+                               social-networl__link--fb"></a>
           </li>
           <li class="social-networks__item">
-            <a href="#" class="social-networl__link">
-              <img src="../images/socials_icons/google.png" alt="g" class="social-networl__logo-picture">
-            </a>
+            <a href="#" class="social-networl__link
+                               social-networl__icon
+                               social-networl__link--google"></a>
           </li>
           <li class="social-networks__item">
-            <a href="#" class="social-networl__link">
-              <img src="../images/socials_icons/twitter.png" alt="twitter" class="social-networl__logo-picture">
-            </a>
+            <a href="#" class="social-networl__link
+                               social-networl__icon
+                               social-networl__link--twitter"></a>
           </li>
           <li class="social-networks__item">
-            <a href="#" class="social-networl__link">
-              <img src="../images/socials_icons/mail.png" alt="mail" class="social-networl__logo-picture">
-            </a>
+            <a href="#" class="social-networl__link
+                               social-networl__icon
+                               social-networl__link--mail"></a>
           </li>
         </ul>
       </div>
