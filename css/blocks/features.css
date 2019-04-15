@@ -1,6 +1,18 @@
 .features {
-  margin-bottom: 67px;
   font-family: "Gotham Pro";
+  width: 272px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  padding-left: 45px;
+  margin-right: 24px;
+  margin-left: 20px;
+  margin-bottom: 25px;
+  border: 1px solid #e8e9ed;
+}
+
+.features__wrapper {
+  text-align: center;
+  width: 195px;
 }
 
 .section-title--faetures {
@@ -15,7 +27,6 @@
 }
 
 .features__options-item {
-  /* width: 194px; */
   margin-right: 68px;
 }
 
@@ -23,8 +34,14 @@
   margin-right: 0;
 }
 
+.features__top-name {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+}
+
 .features__description-name {
-  margin-top: 32px;
   margin-bottom: 15px;
   color: #212121;
   font-size: 11px;
@@ -34,7 +51,7 @@
 }
 
 .features__description-text {
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 30px;
 }

@@ -1,3 +1,8 @@
-.sidebar {
-  width: 200px;
+.sidebar-main {
+  margin-top: 18px;
 }
+
+.sidebar-comments {
+  margin-top: 35px;
+}
+
